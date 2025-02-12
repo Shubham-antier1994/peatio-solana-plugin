@@ -6,7 +6,7 @@ PATH
       better-faraday (~> 1.0.5)
       faraday (>= 0.17, < 3.0)
       memoist (~> 0.16.0)
-      net-http-persistent (~> 3.0.1)
+      net-http-persistent (>= 4.0.0)
       peatio (>= 0.6.3)
 
 GEM
@@ -90,7 +90,7 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.4.1)
     mysql2 (0.5.6)
-    net-http-persistent (3.0.1)
+    net-http-persistent (4.0.5)
       connection_pool (~> 2.2)
     parallel (1.26.3)
     parser (3.3.7.1)
