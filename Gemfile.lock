@@ -2,11 +2,11 @@ PATH
   remote: .
   specs:
     peatio-solana (0.1.0)
-      activesupport (>= 5.2.3, < 7.0)
+      activesupport (~> 5.2.3)
       better-faraday (~> 1.0.5)
-      faraday (>= 0.17, < 3.0)
+      faraday (~> 0.17)
       memoist (~> 0.16.0)
-      net-http-persistent (>= 4.0.0)
+      net-http-persistent (~> 3.0.1)
       peatio (>= 0.6.3)
 
 GEM
@@ -90,7 +90,7 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.4.1)
     mysql2 (0.5.6)
-    net-http-persistent (4.0.5)
+    net-http-persistent (3.0.1)
       connection_pool (~> 2.2)
     parallel (1.26.3)
     parser (3.3.7.1)
@@ -179,14 +179,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
+  bundler (~> 1.17)
   mocha (~> 1.8)
   peatio-solana!
   pry-byebug
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (>= 1.0, < 2.0)
+  rubocop
   webmock (~> 3.5)
 
 BUNDLED WITH
-   2.1.4
+   1.17.3
