@@ -6,8 +6,7 @@ source "https://rubygems.org"
 gemspec
 
 gem 'rake', '~> 13.0'
-gem 'activesupport', '< 7.0'
-gem 'faraday', '>= 1.0', '< 3.0'
-gem 'better-faraday', '>= 1.1.4'  # gem 'better-faraday', '~> 1.0'  # Keep only one of these
 
-gem 'rubocop', '~> 1.0'
+
+gem 'rubocop'
+

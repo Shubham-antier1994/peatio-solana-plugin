@@ -3,7 +3,7 @@ PATH
   specs:
     peatio-solana (0.1.0)
       activesupport (>= 5.2.3, < 8.0)
-      faraday (>= 1.0, < 3.0)
+      faraday (>= 2.8, < 3.0)
       memoist (~> 0.16.0)
       net-http-persistent (~> 4.0.0)
       peatio (>= 0.6.3)
@@ -27,9 +27,6 @@ GEM
       eventmachine
     ast (2.4.2)
     base64 (0.2.0)
-    better-faraday (2.0.1)
-      activesupport (>= 4.0, < 7.0)
-      faraday (>= 1.0, < 3.0)
     bigdecimal (3.1.9)
     bunny (2.23.0)
       amq-protocol (~> 2.3, >= 2.3.1)
@@ -149,16 +146,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  activesupport (< 7.0)
-  better-faraday (>= 1.1.4)
   bundler (~> 2.4)
-  faraday (>= 1.0, < 3.0)
   mocha (~> 2.0)
   peatio-solana!
   pry-byebug
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop (~> 1.0)
+  rubocop
   webmock (~> 3.5)
 
 BUNDLED WITH

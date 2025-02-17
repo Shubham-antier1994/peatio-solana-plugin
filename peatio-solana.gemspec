@@ -27,9 +27,9 @@ Gem::Specification.new do |spec|
   # Runtime dependencies
   spec.add_dependency 'activesupport', '>= 5.2.3', '< 8.0'
   spec.add_dependency "peatio", ">= 0.6.3"
-  spec.add_dependency "faraday", ">= 1.0", "< 3.0"
   spec.add_dependency "memoist", "~> 0.16.0"
   spec.add_dependency 'net-http-persistent', '~> 4.0.0'
+  spec.add_dependency "faraday", ">= 2.8", "< 3.0"
 
   # Development dependencies
   spec.add_development_dependency "bundler", "~> 2.4"
