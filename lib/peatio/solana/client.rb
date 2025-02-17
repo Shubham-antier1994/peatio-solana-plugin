@@ -2,7 +2,6 @@
 
 require 'memoist'
 require 'faraday'
-require 'better-faraday'
 
 module Peatio
   module Solana
