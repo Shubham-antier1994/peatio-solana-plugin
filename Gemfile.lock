@@ -158,7 +158,7 @@ DEPENDENCIES
   pry-byebug
   rake (~> 13.0)
   rspec (~> 3.0)
-  rubocop
+  rubocop (~> 1.0)
   webmock (~> 3.5)
 
 BUNDLED WITH

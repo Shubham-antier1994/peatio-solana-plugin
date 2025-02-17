@@ -38,4 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "mocha", "~> 2.0"
   spec.add_development_dependency "pry-byebug"
   spec.add_development_dependency "webmock", "~> 3.5"
+
+  # Assuming version 3.2.0 changes for dependencies or additional updates are required
+  # Add here any version-specific dependencies or changes for 3.2.0
 end
