@@ -32,7 +32,7 @@ module Peatio
 
       def json_rpc(method, params=[])
         response = post(method, params)
-        response.assert_2xx!
+        raise ConnectionError, "HTTP Error: #{response.status} - #{response.body}"  unless response.success?
         response = JSON.parse(response.body)
 
         response["error"].tap do |e|
