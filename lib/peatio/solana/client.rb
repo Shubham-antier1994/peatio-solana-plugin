@@ -62,7 +62,7 @@ module Peatio
 
         args.last['Accept'] = 'application/json'
         response = Faraday.send(verb, *args)
-        response.assert_success!
+        raise ConnectionError, "HTTP Error: #{response.status} - #{response.body}"  unless response.success?
         response = JSON.parse(response.body)
         response['error'].tap { |error| raise ResponseError.new(error) if error }
         response.dig('data').deep_symbolize_keys!
@@ -83,7 +83,7 @@ module Peatio
 
       def connection
         @connection ||= Faraday.new(@json_rpc_endpoint) do |f|
-          f.adapter :net_http_persistent, pool_size: 100
+          f.adapter :net_http, pool_size: 100
         end.tap do |connection|
           unless @json_rpc_endpoint.user.blank?
             connection.basic_auth(@json_rpc_endpoint.user,
